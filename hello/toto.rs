@@ -10,8 +10,12 @@ fn main() {
     let alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
     println!("La variable a est égale à : {}", a);
     println!("Le calcul de {} + {} est égale à {}",a,b,c );
-    reponse =recuperer_entree_utilisateur();
-    println!("")
+    reponse = recuperer_entree_utilisateur();
+    
+    println!("{:?}",reponse);
+    while true {
+
+    }
 }
 fn recuperer_entree_utilisateur() -> Option<isize> { // elle ne prend rien en entrée et retourne un Option<isize> (dans le cas où ça ne fonctionnerait pas)
     let mut entree = String::new();
